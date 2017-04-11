@@ -13,7 +13,8 @@ public class App
     	Coordinate[] blockPoints = new Coordinate[]{};
     	Vector[] jumpingPoints = new Vector[]{new Vector(2,1,0,3)};
     	
-    	solvePuzzle(grid, blockPoints, jumpingPoints);
+    	int totalStep = solvePuzzle(grid, blockPoints, jumpingPoints);
+    	System.out.print("Total solutions: "+totalStep);
     }
     
     public static int solvePuzzle(Coordinate gridSize,Coordinate[] blockPoints
